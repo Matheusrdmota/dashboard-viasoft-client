@@ -1,27 +1,26 @@
-# ViasoftFront
+# Viasoft Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+Aplicação em Angular que consome dados de uma API Java e disponibiliza informações sobre disponibilidade de serviços das secretarias de fazenda dos estados.
 
-## Development server
+### Layout da Aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Status dos serviços por estado e por data da última atualização:
 
-## Code scaffolding
+![image-20211026075558050](C:\Users\matheus.mota\AppData\Roaming\Typora\typora-user-images\image-20211026075558050.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Status do serviço filtrando por estado:
 
-## Build
+   ![image-20211026075723055](C:\Users\matheus.mota\AppData\Roaming\Typora\typora-user-images\image-20211026075723055.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Status dos serviços filtrando por data de atualização:
 
-## Running unit tests
+   ![image-20211026075755687](C:\Users\matheus.mota\AppData\Roaming\Typora\typora-user-images\image-20211026075755687.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Card com informação do Estado com maior indisponibilidade:
 
-## Running end-to-end tests
+   ![image-20211026075827254](C:\Users\matheus.mota\AppData\Roaming\Typora\typora-user-images\image-20211026075827254.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   
 
-## Further help
+   As informações acima foram consumidas dos endpoints disponibilizados pela API REST desenvolvida em Java. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

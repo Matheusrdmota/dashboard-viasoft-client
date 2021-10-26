@@ -1,0 +1,22 @@
+<div class="card">
+  <h3>Status Atual</h3>
+  <p-table [value]="nfsArray" [style]="{'width':'100%'}" responsiveLayout="scroll" [scrollable]="true" scrollHeight="400px">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Estado</th>
+        <th>Status</th>
+        <th>Última Atualização</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-nf>
+      <tr>
+        <td>{{nf.uf}}</td>
+        <td *ngIf="nf.status" style="color: rgb(4, 196, 4);"><i class="pi pi-arrow-up"></i> Disponível</td>
+        <td *ngIf="!nf.status" style="color: rgb(252, 17, 17);"><i class="pi pi-arrow-down"></i> Indisponível</td>
+        <td>{{nf.verificationTime | data}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+
